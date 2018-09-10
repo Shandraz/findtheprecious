@@ -1,0 +1,91 @@
+@font-face {
+  font-family: "anirm";
+  src: url("fonts/anirm.ttf");
+}
+
+body {
+  font-family: OpenSans, sans-serif;
+  padding: 0 20px;
+} 
+ 
+ h1, h2, h3 {
+  font-family: "anirm" !important;
+}
+
+/*Navbar*/
+
+.navbar {
+  background-color: #F14F20;
+}
+
+/* Section About The Ring */
+
+.card-header {
+  background-color: #F14F20;
+}
+
+/*text avec bordure*/
+
+.reward {
+ position: absolute;
+ background-color: #FDFCFC;
+ text-align: center;
+ border-radius: 25px;    
+ width: 90%;
+ margin : 0 5%;
+ top: 5%;    
+ opacity: 0.7;
+ font-size: 40px;
+ padding: 10px 0;
+}
+
+/*h3 original*/
+
+.gandalf h3 {
+  color:white;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  top: 60%;
+  font-size: 70px;
+}
+
+/*Image Original avec Opacity*/
+
+.gandalf img{
+  opacity: 0.6;
+}
+
+/*Couleur "reward"*/
+
+.gandalf span {
+  color: orange;
+}
+
+
+.gandalf img {
+  width: 100%;
+}
+
+/*Retour à l'image d'origine quand on survol l'image*/
+
+.gandalf:hover img{
+  opacity:1;
+  -webkit-transition: 1s;
+}
+
+/*Pas de texte quand on survol l'image*/
+
+.gandalf:hover .reward{
+	opacity:0;
+  -webkit-transition: 1s;
+}
+
+/*Changement de dimension du h3 quand on survol l'image*/
+
+.gandalf:hover h3{
+	
+ top: 45%;
+ font-size:40px;
+ -webkit-transition: 1s;
+}
