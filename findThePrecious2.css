@@ -3,12 +3,18 @@
   src: url("fonts/anirm.ttf");
 }
 
+@font-face {
+  font-family: "partybusiness";
+  src: url("fonts/partybusiness.ttf");
+} 
+
 body {
   font-family: OpenSans, sans-serif;
   padding: 0 20px;
+  background-image: url("integration_maquette/bg_light.png");
 } 
  
- h1, h2, h3 {
+ h1, h2, h3, .navbar {
   font-family: "anirm" !important;
 }
 
@@ -17,6 +23,46 @@ body {
 .navbar {
   background-color: #F14F20;
 }
+
+.collapse.navbar-collapse {
+  justify-content: flex-end;
+  font-size: 17px;
+}
+
+.nav-link.active {
+  border-bottom: solid white 6px;
+}
+
+.navbar a {
+  color: #ffffff;
+
+
+}
+
+/*Carousel*/
+
+.carousel-caption {
+  font-family: "partybusiness";
+  flex-direction: column;
+  justify-content : center;
+  align-items : flex-start;
+  height: 100%;
+}
+
+.carousel-caption h5 {
+  font-size: 90px;
+}
+
+.carousel-caption p {
+  font-size: 50px;
+}
+
+/* Section About Fellows*/
+
+#fellows {
+  background-image: url("integration_maquette/bg_light.png");
+}
+
 
 /* Section About The Ring */
 
